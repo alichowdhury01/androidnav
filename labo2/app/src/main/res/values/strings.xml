@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">labo2</string>
+
+    <string-array name="categorie_array">
+        <item>Choisir une catégorie</item>
+        <item>Boissons</item>
+        <item>Condiments</item>
+        <item>Produits secs</item>
+        <item>Viandes</item>
+        <item>Poissons et fruits de mer</item>
+    </string-array>
+</resources>
