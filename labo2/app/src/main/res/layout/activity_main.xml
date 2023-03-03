@@ -6,46 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/lister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lister"
-                android:textColor="@color/white"
-                android:background="@color/purple_500"
                 android:layout_weight="1"
-                />
+                android:background="@color/purple_500"
+                android:text="Lister"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/categorie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Catégorie "
-                android:textColor="@color/white"
-                android:background="@color/purple_500"
                 android:layout_weight="1"
-                />
+                android:background="@color/purple_500"
+                android:text="Catégorie "
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total"
-                android:textColor="@color/white"
-                android:background="@color/purple_500"
                 android:layout_weight="1"
-                />
+                android:background="@color/purple_500"
+                android:text="Total"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -54,25 +50,80 @@
             android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/categorie_array"
-            android:background="@color/white"
-            android:textColor="@color/black"
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
-            />
+            android:gravity="center"
+            android:entries="@array/categorie_array"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gestion Inventaire"
-            android:textSize="30sp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            />
+            android:text="Gestion Inventaire"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
 
 
+
+            <EditText
+                android:id="@+id/inputRef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:hint="Entrer la référence du produit"
+                />
+            <EditText
+                android:id="@+id/inputNomProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:hint="Entrer le nom du produit"
+                />
+
+            <EditText
+                android:id="@+id/inputCatedProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:hint="Entrer le nom de la catégorie"
+                />
+
+            <EditText
+                android:id="@+id/inputPrixProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:hint="Entrer le prix du produit"
+                />
+
+            <EditText
+                android:id="@+id/inputQteProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:hint="Entrer la quantité du produit"
+                />
+
+
+
+
+
+        </LinearLayout>
 
 
     </LinearLayout>
